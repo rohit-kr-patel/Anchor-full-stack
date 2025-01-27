@@ -16,13 +16,7 @@ const _dirname=path.resolve();
 
 
 // Configure CORS with proper origin
-app.use(
-  cors({
-    origin: "*", // Adjust as needed for your frontend URL
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Validate required environment variables
 if (!process.env.MONGODB_URI) {
