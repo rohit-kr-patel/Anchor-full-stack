@@ -51,7 +51,7 @@ function Results() {
     // Function to fetch the analysis data from the backend API
     const fetchAnalysis = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/analysis/${id}`)
+        const response = await axios.get(`http://localhost:3000/api/analysis/${id}`)
         setAnalysis(response.data)
       } catch (error) {
         console.error("Error fetching analysis:", error)

@@ -16,7 +16,7 @@ function Home() {
     setIsLoading(true)
     try {
       // Send a POST request to the backend API with the video URL
-      const response = await axios.post("http://localhost:5000/api/analyze", { videoUrl })
+      const response = await axios.post("http://localhost:3000/api/analyze", { videoUrl })
       // Navigate to the results page with the response data ID
       navigate(`/results/${response.data.id}`)
     } catch (error) {
